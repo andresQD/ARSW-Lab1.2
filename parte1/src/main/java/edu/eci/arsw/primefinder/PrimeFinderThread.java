@@ -7,6 +7,7 @@ public class PrimeFinderThread extends Thread{
 
 	
 	int a,b;
+        
 	
 	private List<Integer> primes=new LinkedList<Integer>();
 	
@@ -39,7 +40,6 @@ public class PrimeFinderThread extends Thread{
 	public List<Integer> getPrimes() {
 		return primes;
 	}
-	
 	
 	
 	
