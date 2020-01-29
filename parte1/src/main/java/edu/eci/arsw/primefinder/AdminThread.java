@@ -22,6 +22,7 @@ public class AdminThread extends Thread {
     private final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
     public AdminThread() {
+        super();
         this.procesoPorHilo = new PrimeFinderThread[numeroHilos];
         for (int i = 0; i < numeroHilos; i++) {
             PrimeFinderThread pft = new PrimeFinderThread(numerosPorHilo * i, numerosPorHilo * (i + 1));
@@ -39,6 +40,7 @@ public class AdminThread extends Thread {
             ejecutando = false;
             try {
                 Thread.sleep(5000);
+                pausa();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
