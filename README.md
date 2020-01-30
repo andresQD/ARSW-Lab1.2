@@ -14,7 +14,18 @@ Al ejecutarlo se obtuvo el siguiente resultado:
 ## Part III
 1.  
 1.1 The action of starting the race and showing the results is carried out from line 38 of MainCanodromo
+
+
+
 1.2 The join() method of the Thread class can be used to synchronize the thread that starts the race, with the completion of the greyhound threads.
+
+
+
 2.  Once the initial problem has been corrected, run the application several times, and identify the inconsistencies in the results of the same by seeing the ‘ranking’ shown on the console (sometimes valid results could appear, but in other cases such inconsistencies may occur). From this, identify the critical regions of the program.
+
+
 3.  Use a synchronization mechanism to ensure that these critical regions only access one thread at a time. Verify the results.
+
+
+
 4.  Implement the pause and continue functionalities. With these, when "Stop" is clicked, all the threads of the greyhounds should fall asleep, and when "Continue" is clicked they should wake up and continue with the race. Design a solution that allows you to do this using the synchronization mechanisms with the Locks primitives provided by the language (wait and notifyAll).
