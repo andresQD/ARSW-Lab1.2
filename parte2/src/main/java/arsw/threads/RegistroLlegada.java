@@ -14,7 +14,7 @@ public class RegistroLlegada {
 		this.ganador = ganador;
 	}
 
-	public int getUltimaPosicionAlcanzada() {
+	public synchronized int getUltimaPosicionAlcanzada() {
 		return ultimaPosicionAlcanzada;
 	}
 
