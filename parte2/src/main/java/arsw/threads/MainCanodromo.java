@@ -63,7 +63,7 @@ public class MainCanodromo {
                         System.out.println("Carrera pausada!");
                         for (int j=0; j<galgos.length; j++) {
                        	Galgo gal = galgos[j];
-                       	gal.estado();
+                       	gal.estado(1);
                         }
                     }  	
                 }
@@ -76,7 +76,7 @@ public class MainCanodromo {
                         System.out.println("Carrera reanudada!");
                         for (int j=0; j<galgos.length; j++) {
                            	Galgo gal = galgos[j];
-                           	gal.estado();
+                           	gal.estado(0);
                         }
                     }
                 }

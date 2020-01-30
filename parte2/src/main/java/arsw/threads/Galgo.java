@@ -54,8 +54,8 @@ public class Galgo extends Thread {
 
 	}
 	
-	public void estado() {
-		if (actual) {
+	public void estado(int v) {
+		if (v == 1) {
 			actual = false;
 		}
 		else {
