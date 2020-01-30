@@ -18,15 +18,23 @@ Al ejecutarlo se obtuvo el siguiente resultado:
 1.2 The join() method of the Thread class can be used to synchronize the thread that starts the race, with the completion of the greyhound threads.
 
 ![im1](https://user-images.githubusercontent.com/48091585/73411837-c727dd80-42d4-11ea-8fd0-1b20e634f6a7.png)
+
 Con el ciclo “for” donde a cada galgo se le hace join(), permite no avanzar a la siguiente parte del código hasta que todos los galgos acaben su ejecución, haciendo asi no muestre quien es el ganador hasta que se acabe la carrera.
 
 
 3.  Use a synchronization mechanism to ensure that these critical regions only access one thread at a time. Verify the results.
-Se determino que las reginoes criticas a las cuales solo puede acceder un subproceso a la vez son las que pertenecen a la clase RegistroLegada, mas especificamente a el metodo get y set del atributo UltimaPosicionAlcanzada.
+
+![im2](https://github.com/andresQD/ARSW-Lab1.2/blob/master/img/media/im4.PNG)
+
+Se determino que las regiones criticas a las cuales solo puede acceder un subproceso a la vez son las que pertenecen a la clase RegistroLegada, mas especificamente a el metodo get y set del atributo UltimaPosicionAlcanzada.
+
+
+
 
 4.  Implement the pause and continue functionalities. With these, when "Stop" is clicked, all the threads of the greyhounds should fall asleep, and when "Continue" is clicked they should wake up and continue with the race. Design a solution that allows you to do this using the synchronization mechanisms with the Locks primitives provided by the language (wait and notifyAll).
 
 ![im2](https://user-images.githubusercontent.com/48091585/73411832-c131fc80-42d4-11ea-965c-6a056d30ec26.png)
 
 ![im3](https://user-images.githubusercontent.com/48091585/73411842-cabb6480-42d4-11ea-9c5e-a289d0a32b30.png)
+
 Se añadió una bandera que le permite saber a cada Galgo si debe continuar o si debe para, y un método que dependiendo el botón que se oprima cambie su banderapara saber si esta en ejecución o no.
