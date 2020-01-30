@@ -12,6 +12,12 @@ Al ejecutarlo se obtuvo el siguiente resultado:
 3.  What you have been asked for is: you must modify the application so that when 5 seconds have elapsed since the execution started, all the threads are stopped and the number of primes ​​found so far is displayed. Then, you must wait for the user to press ENTER to resume their execution.
 
 ## Part III
+![im1](https://user-images.githubusercontent.com/48091585/73411837-c727dd80-42d4-11ea-8fd0-1b20e634f6a7.png)
+
+![im2](https://user-images.githubusercontent.com/48091585/73411832-c131fc80-42d4-11ea-965c-6a056d30ec26.png)
+
+![im3](https://user-images.githubusercontent.com/48091585/73411842-cabb6480-42d4-11ea-9c5e-a289d0a32b30.png)
+
 1.  
 1.1 The action of starting the race and showing the results is carried out from line 38 of MainCanodromo
 
